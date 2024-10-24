@@ -17,3 +17,9 @@ SELECT *
 
 FROM fantasy.Characters
 WHERE is_alive=true AND health>50
+
+-------
+--Distinct (for select uinque combination)
+SELECT DISTINCT class,level
+FROM fantasy.Characters
+ORDER BY class,level
