@@ -9,3 +9,18 @@ FROM fantasy.Characters
 SELECT name,id,level AS char_level
 
 FROM fantasy.Characters
+
+---------------
+---constants (constant value)
+
+SELECT name,id,level AS char_level ,1 AS version
+
+FROM fantasy.Characters
+
+-----------------
+---calculations
+
+SELECT name,level AS char_level ,experience,experience/100,
+experience/level*2
+
+FROM fantasy.Characters
