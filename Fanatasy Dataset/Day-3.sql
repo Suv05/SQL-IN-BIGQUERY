@@ -14,10 +14,12 @@ AS(
   WHERE is_alive=false
 );
 
----merge result these two tables by UNION OPERATOR
+---merge result these two tables by UNION OPERATOR and Intersect operation
 SELECT * FROM fantasy.Characters_Alive
 
-UNION DISTINCT
+---UNION DISTINCT
 ---UNION ALL
+
+INTERSECT DISTINCT
 
 SELECT * FROM fantasy.Characters_Dead
