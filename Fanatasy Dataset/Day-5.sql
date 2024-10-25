@@ -1,3 +1,6 @@
+--ORDER BY clause
+
+
 SELECT id,name,class
 FROM `fantasy.Characters`
 ORDER BY class,name DESC
