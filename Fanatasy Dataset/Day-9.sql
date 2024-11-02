@@ -1,4 +1,5 @@
 --to select the power level where it is >= 15 i have to run a subquey
+--nested quries
 
 SELECT *
 FROM
