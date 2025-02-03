@@ -1,3 +1,15 @@
+--show name of employees lies between max and min experience
+SELECT name,experience
+FROM `fantasy.Characters`
+WHERE experience > (
+  SELECT MIN(experience)
+  FROM `fantasy.Characters`
+)
+AND experience < (
+  SELECT MAX(experience)
+  FROM `fantasy.Characters`
+)
+
 -- find the difference between a chracter's experince and their mentor's
 --corelated subquires
 SELECT id AS mentee_id, mentor_id,
