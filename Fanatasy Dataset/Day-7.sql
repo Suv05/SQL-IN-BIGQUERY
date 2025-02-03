@@ -8,3 +8,8 @@ FROM `fantasy.Characters`;
 
 SELECT COUNT(class),MIN(class),MAX(class),STRING_AGG(class,",")
 FROM `fantasy.Characters`
+
+--count no of rows in result
+SELECT COUNT(*)
+FROM `fantasy.Characters`
+WHERE is_alive = true
