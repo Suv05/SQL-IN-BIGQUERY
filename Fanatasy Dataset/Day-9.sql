@@ -11,6 +11,11 @@ level,
     else level * 1.5
   END AS POWER_LEVEL
 
-FROM `fantasy.Characters`)
+FROM (
+SELECT *
+  FROM fantasy.Characters
+  WHERE is_alive=false
+)
+)
 
 WHERE POWER_LEVEL>=15
